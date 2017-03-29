@@ -50,12 +50,12 @@
 <body>
 <?php
 //Member login password check
-	$conn=mysql_connect("localhost","ashu","");
+	$conn=mysql_connect("localhost","Tushar","");
 		if (!$conn) 
 			{
 				die('Could not connect: ' . mysql_error()); 
 			}
-	mysql_select_db("ashu");
+	mysql_select_db("Tushar");
 	$pid=$_POST['uid'];
 	$em=$_POST['pass'];
 
