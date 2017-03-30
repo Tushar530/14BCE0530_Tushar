@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> login</title>
+<title> Login</title>
 <style>
 	body {
 			background:#b3ffb3;
