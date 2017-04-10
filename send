@@ -1,0 +1,10 @@
+<?php
+	$to = "tusharsoni95@gmail.com";
+	$subject = $_POST['sub'];;
+	$txt = $_POST['msg'];
+	$txt = wordwrap($txt,70);
+	$headers = "From: ".$_POST['new_email']. "\r\n" ;
+
+	mail($to,$subject,$txt,$headers);
+	echo"<br> mail sent!! Thank You!"
+?>
