@@ -50,7 +50,7 @@
 <body>
 <?php
 //Member login password check
-	$conn=mysql_connect("localhost","ashu","");
+	$conn=mysql_connect("localhost","Tushar","");
 		if (!$conn) 
 			{
 				die('Could not connect: ' . mysql_error()); 
