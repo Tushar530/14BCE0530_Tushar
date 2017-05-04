@@ -1,0 +1,124 @@
+<HTML>
+<head>
+<title>
+Spell Checker Sign Up</title>
+<script> 
+function check(){
+var a= document.forms["signup"]["new_pw"].value;
+var b= document.forms["signup"]["con_pw"].value;
+if (a.localeCompare(b)==-1)
+{alert( "Password mismatch");
+
+}
+
+}
+</script>
+
+<style>
+	
+	body {
+			background:#b3ffb3;
+			text-align:center;
+			}
+			
+	h1 { 
+			font: 50px, arial, sans-serif;
+			margin-bottom:20px;margin-top:30px;
+			color:white;
+			text-shadow:0 0 50px black;
+			background-color:#1aff1a;
+			border: 2px solid white;
+			border-radius:10px;
+			}
+	
+	.c3{
+			padding:45px;
+			text-align:center;
+			margin:5px;
+			border-radius:15px;
+			
+			}
+	.c4{
+				padding:45px;
+				text-align:center;
+				margin:5px;
+				border-radius:15px;
+				
+				}
+	.c5{
+				padding:45px;
+				text-align:center;
+				margin:5px;
+				border-radius:15px;
+				}
+	.c6{
+			padding:45px;
+			text-align:center;
+			margin:5px;
+			border-radius:15px;
+			}
+			
+	fieldset {
+			display: block;
+			border: 2px solid blue;
+			border-radius:10px;
+			margin-top:80px;
+			margin-right:400px;
+			margin-bottom:0;
+			margin-left:400px;
+			box-shadow:0 0 100px white;
+			
+			}
+	input{
+			display: block;
+			align:center;
+			border-radius:5px;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			box-shadow:0 0 15px blue;
+			}
+	input.i1{
+			display: block;
+			align:center;
+			background-color:blue;
+			border: 0;
+			color:white;
+			border-radius:10px;
+			width:100px;
+			height:30px;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			}
+	</style>
+</head>
+<body>
+
+
+<form name="signup" action="signup_table.php" method=POST>
+<h1> SPELL CHECKER PRO </h1>
+<fieldset>
+<legend>Sign-Up</legend>
+<label> Enter your name: </label>
+<input type="text" name="new_name" value="" required ></br></br>
+<label> Enter your Email: </label>
+<input type="email" name="new_email" value="" required></br></br>
+<label> Enter your username: </label>
+<input type="text" name="new_user" value="" required></br></br>
+<label> Password: </label>
+<input type="password" name="new_pw" placeholder="Password"required></br>
+
+<input type="password" name="con_pw" placeholder="Confirm password"required onblur="check()" ></br></br>
+<p id="demo"></p>
+<input class= "i1" type="submit" name="register" value="Sign Up!" >
+</fieldset>
+
+
+</form>
+</body>
+</html>
